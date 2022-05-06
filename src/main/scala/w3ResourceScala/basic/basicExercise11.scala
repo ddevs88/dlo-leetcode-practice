@@ -1,12 +1,9 @@
-package w3ResourceScala
-
-/*
-* Write a Scala program to check whether a given positive number is a multiple of 3 or a multiple of 7.*/
+package w3ResourceScala.basic
 
 object basicExercise11 {
 
   def multipleOf(i: Int): Boolean = {
-    if(i%3 == 0 || i%7 == 0) true else false
+    if (i % 3 == 0 || i % 7 == 0) true else false
   }
 
   def main(args: Array[String]): Unit = {

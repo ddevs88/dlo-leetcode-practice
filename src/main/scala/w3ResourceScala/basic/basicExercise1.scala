@@ -1,6 +1,4 @@
-package w3ResourceScala
-
-/* Write a Scala program to print "Hello, world" and version of the Scala language. */
+package w3ResourceScala.basic
 
 object basicExercise1 {
 
