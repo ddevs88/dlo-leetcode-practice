@@ -1,5 +1,7 @@
 package leetCode.easy
 
+import scala.collection.mutable
+
 object TwoSum {
 
   def main(args: Array[String]): Unit = {
@@ -15,6 +17,14 @@ object TwoSum {
 
     twoSum_brute_force(Array(2, 11, 7, 15), 10)
       .foreach(println)
+
+    println("=============")
+
+    val startTime1 = System.currentTimeMillis()
+    twoSum_hashMap(Array(2, 11, 7, 15), 9)
+
+    val endTime1 = System.currentTimeMillis()
+    println(s"Consumed time: ${endTime1 - startTime1}")
   }
 
   def twoSum_brute_force(nums: Array[Int], target: Int): Array[Int] = {
@@ -29,5 +39,18 @@ object TwoSum {
       }
     }
     arr
+  }
+
+  def twoSum_hashMap(nums: Array[Int], target: Int): Unit = {
+    var map = mutable.HashMap[Int, Int]()
+    for(n <- 0 to nums.length-1){
+      var diff = target - nums(n)
+      if(map.contains(diff)) {
+        println(s"(${map.get(diff).get}, $n)")
+      }
+      else {
+        map.put(nums(n), n)
+      }
+    }
   }
 }

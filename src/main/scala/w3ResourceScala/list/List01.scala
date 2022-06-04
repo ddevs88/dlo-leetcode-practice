@@ -1,5 +1,9 @@
 package w3ResourceScala.list
 
+
+/*Write a Scala program to create a list in different ways. Go to the editor
+Note: Use Lisp style, Java style, Range list, Uniform list, Tabulate list*/
+
 object List01 {
 
   def main(args: Array[String]): Unit = {
