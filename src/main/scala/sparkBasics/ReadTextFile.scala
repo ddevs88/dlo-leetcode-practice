@@ -46,12 +46,12 @@ object ReadTextFile extends App {
   val df = spark.createDataFrame(dataUsingCaseClass)
   df.show()
 
-  df.coalesce(1)
+  /*df.coalesce(1)
     .write
     .option("header","true")
     .option("sep",",")
     .mode("overwrite")
-    .csv("src/main/scala/sparkBasics/resources/")
+    .csv("src/main/scala/sparkBasics/resources/")*/
 
 
 
