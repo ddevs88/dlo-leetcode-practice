@@ -101,4 +101,8 @@ object SqlTop10 extends App {
     "where e.manager_id = m.emp_id " +
     "and e.salary > m.salary")
     .show(false)
+
+  spark.sql("select * " +
+    "from employee_table e, manager_table m " +
+    "where e.manager_id = m.emp_id ").show(false)
 }

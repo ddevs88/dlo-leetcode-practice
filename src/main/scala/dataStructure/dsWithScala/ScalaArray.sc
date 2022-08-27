@@ -30,3 +30,6 @@ def calFact(n: Int): Int = {
 }
 calFact(4)
 
+val n=50/3
+List.fill(n)(3)
+
