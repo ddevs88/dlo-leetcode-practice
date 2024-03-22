@@ -1,0 +1,34 @@
+{
+  "country": [{
+    "country1":
+      {
+        "dept1": {
+          "count": 50
+        },
+        "dept2": {
+          "count": 20
+        },
+        "dept3": {
+          "count": 5
+        },
+        "dept4": {
+          "count": 55
+        }
+      }
+  },
+    {
+      "country2": {
+        "dept1": {
+          "count": 50
+        },
+        "dept2": {
+          "count": 20
+        },
+        "dept3": {},
+        "dept4": {
+          "count": 55
+        }
+      }
+    }
+  ]
+}
